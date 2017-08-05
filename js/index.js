@@ -28,7 +28,7 @@ function submitData() {
     xhtpp.send(JSON.stringify(
         {
             "phoneNumber": phoneNumber,
-            "ticketId": document.getElementById("ticketId").value
+            "ticketId": ticketId
         }));
 
     xhtpp.onreadystatechange = function () {
