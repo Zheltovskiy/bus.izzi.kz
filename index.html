@@ -67,9 +67,9 @@
 		<div class="container">
 		<form id="form1" method="post" class="input-panels">
 			<label >Билет id</label><br>
-			<input class="ticket-id" type="" name="ticketId" id="ticketId" placeholder="Введите 6 цифр"><br>
+			<input class="ticket-id" type="" name="ticketId" id="ticketId" placeholder="Введите 6 цифр" maxlength="6"><br>
 			<label style="margin-top: 20px;">Ваш номер телефона</label><br>
-			<input class="cell-number" type="" name="phonenumber" id="phonenumber" placeholder="77071234567"><br>	
+			<input class="cell-number" type="" name="phonenumber" id="phonenumber" value="+7" maxlength="12"><br>
 			<input class="submit-btn" value="Отправить"  name="" data-toggle="modal" data-target="#myModal" onclick="submitData();" readonly="readonly">
 		</form>
 		</div>
@@ -109,11 +109,12 @@
   </div>
 
 
-
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <script type="text/javascript" src="./js/index.js"></script>
 <script type="text/javascript" src="./js/winners.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
